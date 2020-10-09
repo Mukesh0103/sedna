@@ -1,0 +1,114 @@
+.sedna-header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(38, 43, 57, 1);
+}
+.header-content{
+    display: flex;
+    align-items: center;
+    padding: 42px 0 30px 0;
+    position: relative;
+}
+.header-content::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+}
+.company-logo{
+    margin-right: 70px;
+}
+.company-logo img{
+    width: 104px;
+    height: 30px;
+}
+.nav-list li{
+    margin-left: 16px;
+    font-size: 13px;
+    color: #fff;
+}
+.nav-list li:hover, 
+.login-btn:hover{
+    color: #ff5274;
+    transition: 0.4s;
+}
+.company-register{
+    margin-left: auto;
+    font-size: 13px;
+}
+.login-btn{
+    margin: 0 20px;
+    color: #fff;
+}
+.signup-btn{
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 8px 30px;
+}
+.about-sedna{
+    height: 750px;
+    background-color: rgba(38, 43, 57, 0.9);
+}
+.about-sedna::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-image: url(../images/hero-image-01.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 750px;
+    z-index: -1;
+}
+.about-content{
+    padding-top: 250px;
+    width: 830px;
+    margin: auto;
+    text-align: center;
+}
+.about-content h1{
+    font-size: 60px;
+    color: #fff;
+    margin: 0;
+    vertical-align: middle;
+    font-weight: normal;
+}
+.about-content p{
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+}
+.about-section-btn{
+    margin-top: 84px;
+}
+.about-section-btn a{
+    font-size: 13px;
+    padding: 18px 36px;
+    display: inline-block;
+    margin: 0 10px;
+}
+.features-list{
+    margin: 120px 0;
+}
+.features-list li{
+    width: calc((100% - 48px) / 3);
+    margin: auto;
+}
+.features-list figure, 
+.features-list div{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+}
+.features-list img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
