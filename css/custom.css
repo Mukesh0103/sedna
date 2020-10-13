@@ -12,8 +12,7 @@
 }
 
 .header-content {
-    align-items: center;
-    padding: 42px 0 30px 0;
+    padding: 38px 20px 28px 20px;
     position: relative;
 }
 
@@ -24,7 +23,8 @@
     left: 0;
     right: 0;
     border-bottom: 1px solid #fff;
-    width: 100%;
+    width: 96%;
+    margin: auto;
 }
 
 .company-logo {
@@ -32,9 +32,10 @@
     display: inline-block;
 }
 
-.company-logo img {
+.company-logo .company-logo__img {
     width: 104px;
     height: 30px;
+    object-fit: contain;
 }
 
 .nav-list {
@@ -49,33 +50,32 @@
     color: #fff;
 }
 
-.nav-list li:hover, .login-btn:hover {
+.nav-list li:hover, .login-signin:hover {
     color: #ff5274;
     transition: 0.4s;
 }
 
 .company-register {
-    margin-left: auto;
     font-size: 13px;
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 8px;
 }
 
-.login-btn {
+.login-signin {
     margin: 0 20px;
     color: #fff;
+    display: inline-block;
 }
 
 .signup-btn {
     color: #fff;
     border: 2px solid #fff;
     padding: 8px 30px;
+    display: inline-block;
 }
 
 .about-sedna {
-    height: 750px;
+    height: 650px;
     background-color: rgba(38, 43, 57, 0.9);
+    margin-top: 100px;
 }
 
 .about-sedna::before {
@@ -87,67 +87,67 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 750px;
+    height: 650px;
     z-index: -1;
 }
 
 .about-content {
-    padding-top: 250px;
-    width: 830px;
     margin: auto;
+    max-width: 830px;
+    padding: 146px 0;
 }
 
-.about-content h1 {
+.about-content .about-content__heading {
     font-size: 60px;
     color: #fff;
-    vertical-align: middle;
     font-weight: normal;
 }
 
-.about-content p {
+.about-content .about-content__caption {
     font-size: 20px;
     font-weight: 300;
     color: #fff;
+    margin: 15px 0 0 0;
 }
 
-.about-section-btn {
+.about-content__buttons {
     margin-top: 84px;
 }
 
-.about-section-btn a {
+.about-content__buttons .download-learn__btn {
     font-size: 13px;
-    padding: 18px 36px;
+    padding: 18px 0;
     display: inline-block;
     margin: 0 10px;
+    width: 210px;
 }
 
-.features-list-1 {
-    margin: 120px 0;
+.sedna-features {
+    padding: 120px 0;
 }
 
-.features-list-1 li {
+.sedna-features-list li {
     width: calc((100% - 10px)/ 3);
     vertical-align: top;
 }
 
-.features-list-1 figure, .features-list-2 .feat figure {
+.sedna-features-list .feature-figure, .features-list-2 .feat figure {
     display: inline-block;
     width: 40px;
     vertical-align: top;
 }
 
-.features-list-1 div, .features-list-2 .feat div {
+.sedna-features-list .feature-content, .features-list-2 .feat div {
     display: inline-block;
-    width: 75%;
-    box-sizing: border-box;
+    width: 264px;
     margin-left: 24px;
 }
 
-.features-list-1 p {
-    margin-top: 10px;
+.sedna-features-list .feature-caption {
+    margin: 10px 0 0 0;
 }
 
-.features-list-1 img {
+.sedna-features-list .feature-icon {
     width: 40px;
     height: 40px;
     object-fit: contain;
@@ -348,4 +348,41 @@ figure .iphone-6 {
     padding: 10px 36px;
     font-size: 13px;
     font-weight: 600;
+}
+
+.sedna-carousel--1 {
+    height: 500px;
+}
+
+.sedna-carousel--1__content {
+    background: url(../images/slider.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    padding-top: 136px;
+}
+
+.sedna-carousel--1__content figure img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 3px solid #fff;
+}
+
+.sedna-carousel--1__content h1 {
+    font-size: 40px;
+    font-weight: 300;
+    font-style: italic;
+    color: #fff;
+    padding: 28px 0;
+}
+
+.sedna-carousel--1__content p {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #acb1b4;
 }

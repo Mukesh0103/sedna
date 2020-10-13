@@ -8,6 +8,13 @@ body {
     box-sizing: border-box;
 }
 
+.container {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -15,6 +22,10 @@ a {
 
 .m-0 {
     margin: 0;
+}
+
+.head-1{
+    font-size: 40px;
 }
 
 .head-4 {
@@ -44,7 +55,7 @@ li {
     vertical-align: middle;
 }
 
-.center {
+.center-align {
     text-align: center;
 }
 
@@ -71,13 +82,7 @@ li {
     border: 2px solid #ff5274;
 }
 
-.container {
-    width: 1060px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.content-para {
+.caption {
     font-weight: 300;
     line-height: 1.67;
     font-size: 15px;
