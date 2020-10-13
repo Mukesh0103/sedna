@@ -105,7 +105,6 @@
 
 .about-content .about-content__caption {
     font-size: 20px;
-    font-weight: 300;
     color: #fff;
     margin: 15px 0 0 0;
 }
@@ -131,15 +130,15 @@
     vertical-align: top;
 }
 
-.sedna-features-list .feature-figure, .features-list-2 .feat figure {
+.sedna-features-list .feature-figure, .advantages-list__features .feat .feat-figure {
     display: inline-block;
     width: 40px;
     vertical-align: top;
 }
 
-.sedna-features-list .feature-content, .features-list-2 .feat div {
+.sedna-features-list .feature-content, .advantages-list__features .feat .feat-content {
     display: inline-block;
-    width: 264px;
+    width: 274px;
     margin-left: 24px;
 }
 
@@ -153,67 +152,63 @@
     object-fit: contain;
 }
 
-.sedna-features-2 {
+.sedna-advantages {
     border: 1px solid #e6e9ea;
     background: #f7f8fa;
-    height: 760px;
-    overflow: hidden;
     position: relative;
+    padding: 110px 0;
+    overflow: hidden;
 }
 
-figure .ipad {
+.product-images .large-product {
     width: 550px;
     object-fit: contain;
     position: absolute;
-    top: 120px;
+    bottom: -54%;
     left: -120px;
 }
 
-figure .iphone-6 {
+.product-images .small-product {
     width: 300px;
     object-fit: contain;
     position: absolute;
-    top: 368px;
-    left: 306px;
+    bottom: -24%;
+    left: 22%;
 }
 
-.feature2-content, .about-sketch-content {
-    overflow: auto;
-}
-
-.feature2-content article, .about-sketch-content article {
+.advantages-list .advantages-list__article {
     width: 422px;
-    margin-top: 144px;
+    margin-left: auto;
 }
 
-.feature2-content article h2, .about-sketch-content article h2 {
-    font-weight: 300;
+.advantages-list .advantages-list__article .advantages-list__caption{
+    margin: 20px 0;
 }
 
-.feature2-content article p {
-    padding-top: 20px;
-}
-
-.features-list-2 {
+.advantages-list__features {
     margin-top: 40px;
 }
 
-.feature2-content article .features-list-2 p {
+.advantages-list .advantages-list__article .advantages-list__features .feat-content__caption {
     padding-top: 10px;
 }
 
-.features-list-2 .feat {
+.advantages-list__features .feat {
     padding: 20px 0;
     border-bottom: 1px solid #e6e9ea;
 }
 
-.features-list-2 .feat:last-child {
+.advantages-list__features .feat:last-child {
     border-bottom: none;
 }
 
 .about-sketch {
     position: relative;
-    height: 760px;
+    padding: 110px;
+}
+
+.about-sketch-content article {
+    width: 422px;
 }
 
 .about-sketch-content article .sketch-btn {
