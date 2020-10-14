@@ -1,0 +1,71 @@
+@media (min-width: 992px) {
+    .mobile-menu, .company-register .menu-button {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .company-logo {
+        margin: 0;
+    }
+    .nav-list, .company-register .signup-btn {
+        display: none;
+    }
+    .company-register .menu-button .menu {
+        width: 20px;
+        vertical-align: middle;
+        object-fit: contain;
+    }
+    .company-register .menu-button {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .company-register {
+        padding-top: 10px;
+    }
+    .about-content {
+        padding: 180px 0;
+    }
+    .about-content .about-content__heading {
+        font-size: 40px;
+        color: #fff;
+    }
+    .about-content .about-content__caption {
+        font-size: 18px;
+    }
+    .sedna-features-list .feature-content {
+        width: 150px;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-content {
+        padding: 150px 0;
+    }
+    .about-content .about-content__heading {
+        font-size: 25px;
+        color: #fff;
+    }
+    .about-content .about-content__caption {
+        font-size: 14px;
+    }
+    .about-content__buttons {
+        margin-top: 60px;
+    }
+    .about-content__buttons .download-learn__btn {
+        padding: 14px 0;
+        margin: 10px;
+        width: 210px;
+    }
+    .sedna-features-list{
+        width: 90%;
+        margin: auto;
+    }
+    .sedna-features-list .feature-content {
+        width: 70%;
+    }
+    .sedna-features-list li {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

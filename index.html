@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/custom.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./images/flaticon.css">
 </head>
 
 <body>
@@ -24,14 +26,17 @@
                 <div class="company-register f-right">
                     <a href="#" class="login-signin">LOG IN</a>
                     <a href="#" class="signup-btn btn-outline">SIGN UP</a>
+                    <a href="#" class="menu-button"><img src="./images/menu.svg" class="menu" alt="menu"></a>
                 </div>
+                <div class="mobile-menu"></div>
             </div>
         </header>
         <section class="about-sedna">
             <div class="container">
                 <div class="about-content center-align">
-                    <h1 class="about-content__heading m-0">Design, collaborate, win.</h1>
-                    <p class="about-content__caption fw-300">Introducing “Sedna”. A responsive one page website, designed &
+                    <h1 class="about-content__heading m-0 fw-4">Design, collaborate, win.</h1>
+                    <p class="about-content__caption fw-3">Introducing “Sedna”. A responsive one page website,
+                        designed &
                         developed by Peter Finlan,
                         exclusively for Codrops.</p>
                     <div class="about-content__buttons">
@@ -126,9 +131,9 @@
             </div>
         </section>
         <section class="about-sketch">
-            <div class="about-sketch-content container">
-                <article>
-                    <h2 class="m-0 fw-300">Designed using Sketch!</h2>
+            <div class="container">
+                <article class="about-sketch__content">
+                    <h2 class="m-0 fw-3">Designed using Sketch!</h2>
                     <p class="caption">Easily change/switch/swap every placeholder inside every image on Sedna with
                         the
                         included Sketch files. You’ll have this template customised to suit your business in no time!
@@ -138,21 +143,22 @@
                         a pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum augue
                         faucibus felis pharetra. Proin condimentum et leo quis fringilla.
                     </p>
-                    <a href="#" class="btn-outline sketch-btn">WHAT'S SKETCH?</a>
+                    <a href="#" class="btn-outline sketch-btn fw-6">WHAT'S SKETCH?</a>
                 </article>
             </div>
-            <figure class="m-0">
-                <img class="macbook-pro" src="./images/macbook-pro.png" alt="macbook-pro">
+            <figure class="m-0 about-sketch__figure">
+                <img class="device-image" src="./images/macbook-pro.png" alt="macbook-pro">
             </figure>
         </section>
         <section class="download-section center-align">
             <div class="container download-content">
-                <h1>Customise Sedna with the included <p class="sketch">Sketch<sup>3</sup></p> file</h1>
-                <p class="download-content--para">Change/swap/edit every aspect of Sedna before you hit development with
-                    the included Sketch file.</p>
-                <a href="#" class="btn-outline">DOWNLOAD NOW</a>
-                <figure class="m-0">
-                    <img src="./images/sketch-logo.png" alt="sketch-logo">
+                <h1 class="head-1 m-0 fw-3 text-white">Customise Sedna with the included <p class="sketch fw-2">
+                        Sketch<sup class="superscript-text">3</sup></p> file</h1>
+                <p class="download-content__caption fw-3">Change/swap/edit every aspect of Sedna before you hit
+                    development with the included Sketch file.</p>
+                <a href="#" class="btn-outline download-btn">DOWNLOAD NOW</a>
+                <figure class="m-0 sketch-figure">
+                    <img class="sketch-logo" src="./images/sketch-logo.png" alt="sketch-logo">
                 </figure>
             </div>
         </section>
@@ -160,66 +166,73 @@
             <div class="container product-content">
                 <h2 class="m-0">Showcase your smashing product with Sedna</h2>
                 <div class="product-features">
-                    <ul class="m-0">
+                    <ul class="m-0 product-features__list">
                         <li>
-                            <h4 class="head-4 m-0">EXCLUSIVE TO CODROPS</h4>
-                            <p class="m-0">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                                qui officia deserunt mollit anim id est laborum.</p>
+                            <h4 class="head-4 m-0 product-features__head">EXCLUSIVE TO CODROPS</h4>
+                            <p class="m-0 product-features__caption caption">Minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris
+                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
                         </li>
                         <li>
-                            <h4 class="head-4 m-0">SPREADING PIXELS AROUND THE WORLD</h4>
-                            <p class="m-0">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                commodo
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                                qui officia deserunt mollit anim id est laborum.</p>
+                            <h4 class="head-4 m-0 product-features__head">SPREADING PIXELS AROUND THE WORLD</h4>
+                            <p class="m-0 product-features__caption caption">Minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris
+                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                voluptate
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident,
+                                sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         </li>
                     </ul>
                 </div>
             </div>
-            <figure class="m-0 center-align">
-                <img src="./images/ocean.png">
-                <figcaption class="img-caption">
+            <figure class="m-0 center-align product-section__figure">
+                <img src="./images/ocean.png" class="product-picture">
+                <figcaption>
                     <h6 class="head-6 m-0">PRODUCT</h6>
-                    <a href="#" class="head-4">Getting started with Sedna &nbsp;
-                        <span><img src="./images/right-arrow-angle.svg"></span>
+                    <a href="#" class="head-4 fw-3 product-caption">Getting started with Sedna &nbsp;
+                        <span><img src="./images/right-arrow-angle.svg" class="arrow-right"></span>
                     </a>
                 </figcaption>
             </figure>
-            <figure class="m-0 center-align">
-                <img src="./images/plant.png">
-                <figcaption class="img-caption">
+            <figure class="m-0 center-align product-section__figure">
+                <img src="./images/plant.png" class="product-picture">
+                <figcaption>
                     <h6 class="head-6 m-0">TECHNOLOGY</h6>
-                    <a href="#" class="head-4">Why IE8 support is deminishing &nbsp;
-                        <span><img src="./images/right-arrow-angle.svg"></span>
+                    <a href="#" class="head-4 product-caption">Why IE8 support is deminishing &nbsp;
+                        <span><img src="./images/right-arrow-angle.svg" class="arrow-right"></span>
                     </a>
                 </figcaption>
             </figure>
-            <figure class="m-0 center-align">
-                <img src="./images/sky.png">
-                <figcaption class="img-caption">
+            <figure class="m-0 center-align product-section__figure">
+                <img src="./images/sky.png" class="product-picture">
+                <figcaption>
                     <h6 class="head-6 m-0">PRODUCT</h6>
-                    <a href="#" class="head-4">Sedna tutorial: How to begin your… &nbsp;
-                        <span><img src="./images/right-arrow-angle.svg"></span>
+                    <a href="#" class="head-4 product-caption">Sedna tutorial: How to begin your… &nbsp;
+                        <span><img src="./images/right-arrow-angle.svg" class="arrow-right"></span>
                     </a>
                 </figcaption>
             </figure>
             <div class="product-btn center-align">
-                <a href="#" class="btn-outline more-news">MORE NEWS</a>
+                <a href="#" class="btn-outline more-news fw-6">MORE NEWS</a>
             </div>
         </section>
         <section class="slider-section">
-            <div class="sedna-carousel--1">
-                <div class="sedna-carousel--1__content center-align">
-                    <figure class="m-0">
-                        <img src="./images/profile-image.jpg">
-                    </figure>
-                    <h1 class="m-0">“Sedna is crucial to our workflow”</h1>
-                    <p class="m-0">PETER FINLAN, CEO OF AWESOMESAUCE TECHNOLOGIES</p>
-                </div>
+            <div class="sedna-carousel--1 center-align">
+                <figure class="m-0">
+                    <img src="./images/profile-image.jpg" class="user-image">
+                </figure>
+                <h1 class="m-0 fw-3 text-white head-1 sedna-carousel--1__head">“Sedna is crucial to our workflow”</h1>
+                <p class="m-0 fw-3 head-4 sedna-carousel--1__caption">PETER FINLAN, CEO OF AWESOMESAUCE TECHNOLOGIES</p>
+            </div>
+            <div class="slider-arrows text-white">
+                <a href="#" class="prev-btn"><i class="flaticon-right-arrow-angle arrow-icon"></i></a>
+                <a href="#" class="next-btn"><i class="flaticon-right-arrow-angle arrow-icon"></i></a>
             </div>
         </section>
     </div>
