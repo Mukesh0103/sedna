@@ -2,7 +2,6 @@ body {
     margin: 0;
     color: rgba(28, 54, 83, 0.7);
     font-family: 'Open Sans';
-    overflow: auto;
 }
 
 * {
@@ -25,14 +24,6 @@ a {
     color: inherit;
 }
 
-.fw-1{
-    font-weight: 100;
-}
-
-.fw-2{
-    font-weight: 200;
-}
-
 .fw-3{
     font-weight: 300;
 }
@@ -41,36 +32,24 @@ a {
     font-weight: 400;
 }
 
-.fw-5{
-    font-weight: 500;
-}
-
 .fw-6{
     font-weight: 600;
-}
-
-.fw-7{
-    font-weight: 700;
-}
-
-.fw-8{
-    font-weight: 800;
-}
-
-.fw-9{
-    font-weight: 900;
 }
 
 .m-0 {
     margin: 0;
 }
 
-.text-white{
-    color: #fff;
+.head-1{
+    font-size: 60px;
 }
 
-.head-1{
+.head-2{
     font-size: 40px;
+}
+
+.head-3{
+    font-size: 24px;
 }
 
 .head-4 {
@@ -95,12 +74,10 @@ ul {
 }
 
 li {
-    display: inline-block;
     list-style: none;
-    vertical-align: middle;
 }
 
-.center-align {
+.ta-center {
     text-align: center;
 }
 

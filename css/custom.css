@@ -44,6 +44,7 @@
 }
 
 .nav-list li {
+    display: inline-block;
     margin-left: 16px;
     font-size: 13px;
     color: #fff;
@@ -96,14 +97,13 @@
 }
 
 .about-content .about-content__heading {
-    font-size: 60px;
     color: #fff;
 }
 
 .about-content .about-content__caption {
-    font-size: 20px;
     color: #fff;
     margin: 15px 0 0 0;
+    font-size: 20px;
 }
 
 .about-content__buttons {
@@ -125,18 +125,19 @@
 .sedna-features-list li {
     width: calc((100% - 10px)/ 3);
     vertical-align: top;
+    display: inline-block;
 }
 
 .sedna-features-list .feature-figure, .advantages-list__features .feat .feat-figure {
     display: inline-block;
     width: 40px;
     vertical-align: top;
+    margin-right: 24px;
 }
 
 .sedna-features-list .feature-content, .advantages-list__features .feat .feat-content {
     display: inline-block;
-    width: 274px;
-    margin-left: 24px;
+    max-width: 274px;
 }
 
 .sedna-features-list .feature-caption {
@@ -146,6 +147,7 @@
 .sedna-features-list .feature-icon {
     width: 40px;
     height: 40px;
+    margin-right: 24px;
     object-fit: contain;
 }
 
@@ -204,7 +206,7 @@
 }
 
 .about-sketch__content {
-    width: 422px;
+    max-width: 422px;
 }
 
 .about-sketch__content .sketch-btn {
@@ -223,9 +225,13 @@
 }
 
 .download-section {
-    background: rgba(61, 67, 81, 0.8);
+    background: rgb(61, 67, 81, 0.8);
     position: relative;
     padding: 100px 0;
+}
+
+.download-content .download-content__head{
+    color: #fff;
 }
 
 .download-content .sketch {
@@ -275,7 +281,8 @@
 }
 
 .product-features .product-features__list li {
-    width: calc((100% - 15px)/ 2);
+    max-width: calc((100% - 15px)/ 2);
+    display: inline-block;
 }
 
 .product-features .product-features__list li:first-child {
@@ -314,7 +321,7 @@
     display: inline-block;
 }
 
-.product-section .product-section__figure .product-caption .arrow-right {
+.product-section .arrow-right {
     width: 6px;
     height: 15px;
     color: #677074;
@@ -355,11 +362,16 @@
 .sedna-carousel--1 .sedna-carousel--1__head {
     font-style: italic;
     padding: 28px 0;
+    color: #fff;
 }
 
 .sedna-carousel--1 .sedna-carousel--1__caption {
     letter-spacing: 2px;
     color: #acb1b4;
+}
+
+.slider-arrows{
+    color: #fff;
 }
 
 .slider-arrows .prev-btn {

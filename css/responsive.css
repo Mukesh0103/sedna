@@ -5,6 +5,9 @@
 }
 
 @media (max-width: 991px) {
+    .mobile-menu {
+        display: none;
+    }
     .company-logo {
         margin: 0;
     }
@@ -26,46 +29,219 @@
     .about-content {
         padding: 180px 0;
     }
-    .about-content .about-content__heading {
-        font-size: 40px;
-        color: #fff;
+    .about-content__buttons .download-learn__btn, .download-content .download-btn {
+        padding: 12px 0;
+        width: 180px;
+        font-size: 13px;
     }
-    .about-content .about-content__caption {
+    .head-1 {
+        font-size: 40px;
+    }
+    .head-3 {
         font-size: 18px;
     }
+    .head-4 {
+        font-size: 14px;
+    }
+    .sedna-features, .sedna-advantages, .download-section {
+        padding: 80px 0;
+    }
     .sedna-features-list .feature-content {
-        width: 150px;
+        max-width: 150px;
+    }
+    .product-images .large-product {
+        width: 380px;
+        left: -60px;
+    }
+    .product-images .small-product {
+        width: 240px;
+        left: 20%;
+        bottom: -2%;
+    }
+    .sedna-features-list .feature-figure, .advantages-list__features .feat .feat-figure {
+        margin-right: 20px;
+    }
+    .advantages-list__article .advantages-list__head, .about-sketch__content .about-sketch__head {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .advantages-list .advantages-list__article {
+        width: 330px;
+    }
+    .advantages-list__features .feat .feat-content {
+        max-width: 260px;
+    }
+    .about-sketch {
+        padding: 70px 0 100px 0;
+        overflow: hidden;
+    }
+    .about-sketch .about-sketch__figure .device-image {
+        top: 60px;
+        right: -80px;
+        width: 540px;
+    }
+    .about-sketch__content {
+        max-width: 300px;
+    }
+    .product-section {
+        padding: 140px 0 100px 0;
+    }
+    .product-content .product-content__head {
+        text-align: center;
+    }
+    .product-features .product-features__list li:first-child {
+        padding-right: 30px;
+    }
+    .product-features .product-features__list li:last-child {
+        padding-left: 30px;
+    }
+    .product-section .product-content {
+        padding-bottom: 90px;
+    }
+    .product-section .product-section__figure {
+        display: block;
+    }
+    .slider-arrows .prev-btn {
+        left: 30px;
+    }
+    .slider-arrows .next-btn {
+        right: 30px;
     }
 }
 
 @media (max-width: 767px) {
+    .nav-menu {
+        color: #fff;
+        font-size: 13px;
+        margin: 10px 0;
+    }
+    .nav-menu li {
+        padding: 10px 0;
+    }
+    .about-sedna {
+        height: 600px;
+    }
+    .about-sedna::before {
+        height: 600px;
+    }
     .about-content {
         padding: 150px 0;
     }
-    .about-content .about-content__heading {
+    .head-1 {
         font-size: 25px;
-        color: #fff;
     }
-    .about-content .about-content__caption {
-        font-size: 14px;
+    .head-2 {
+        font-size: 22px;
+    }
+    .head-3 {
+        font-size: 16px;
+    }
+    .head-4 {
+        font-size: 13px;
     }
     .about-content__buttons {
         margin-top: 60px;
     }
-    .about-content__buttons .download-learn__btn {
-        padding: 14px 0;
+    .about-content__buttons .download-learn__btn, .download-content .download-btn {
+        font-size: 12px;
         margin: 10px;
-        width: 210px;
     }
-    .sedna-features-list{
+    .sedna-features, .sedna-advantages, .download-section, .about-sketch {
+        padding: 60px 0;
+    }
+    .sedna-features-list .feature-figure, .advantages-list__features .feat .feat-figure {
+        width: 30px;
+        margin-right: 20px;
+    }
+    .sedna-features-list .feature-icon, .advantages-list__features .feat .advantages-icons {
+        width: 30px;
+        height: 30px;
+    }
+    .sedna-features-list {
         width: 90%;
-        margin: auto;
+    }
+    .caption {
+        font-size: 12px;
     }
     .sedna-features-list .feature-content {
-        width: 70%;
+        max-width: 78%;
     }
     .sedna-features-list li {
         width: 100%;
         margin-bottom: 20px;
+    }
+    .sedna-advantages .product-images {
+        display: none;
+    }
+    .advantages-list .advantages-list__article {
+        width: 100%;
+    }
+    .advantages-list__features .feat .feat-content {
+        max-width: 80%;
+    }
+    .advantages-list__article .advantages-list__head, .about-sketch__content .about-sketch__head {
+        font-size: 16px;
+        text-align: center;
+    }
+    .about-sketch__content {
+        max-width: 100%;
+    }
+    .about-sketch__figure {
+        display: none;
+    }
+    .about-sketch__content .about-sketch__btn {
+        text-align: center;
+    }
+    .about-sketch__content .sketch-btn {
+        font-size: 12px;
+        padding: 12px 0px;
+        width: 180px;
+        margin: 20px 0;
+    }
+    .download-content .sketch .superscript-text {
+        font-size: 14px;
+    }
+    .download-content__caption {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .product-section {
+        padding: 90px 0 60px 0;
+    }
+    .download-content .sketch-figure .sketch-logo {
+        width: 100px;
+        object-fit: contain;
+    }
+    .product-features .product-features__list {
+        padding-top: 60px;
+    }
+    .product-features .product-features__list li:first-child {
+        display: block;
+        max-width: 100%;
+        padding: 0;
+        border: none;
+        margin-bottom: 20px;
+    }
+    .product-features .product-features__list li:last-child {
+        display: block;
+        max-width: 100%;
+        padding: 0;
+    }
+    .product-section .product-content {
+        padding-bottom: 40px;
+    }
+    .product-section .product-section__figure .product-picture {
+        width: 100%;
+        padding: 10px;
+        height: auto;
+    }
+    .sedna-carousel--1 {
+        padding: 80px 10px;
+    }
+    .slider-arrows .prev-btn {
+        left: 20px;
+    }
+    .slider-arrows .next-btn {
+        right: 20px;
     }
 }

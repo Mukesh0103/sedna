@@ -26,16 +26,24 @@
                 <div class="company-register f-right">
                     <a href="#" class="login-signin">LOG IN</a>
                     <a href="#" class="signup-btn btn-outline">SIGN UP</a>
-                    <a href="#" class="menu-button"><img src="./images/menu.svg" class="menu" alt="menu"></a>
+                    <a href="#" class="menu-button" onclick="openMenu()"><img src="./images/menu.svg" class="menu"
+                            alt="menu"></a>
                 </div>
-                <div class="mobile-menu"></div>
+                <div class="mobile-menu" id="mobile-menu">
+                    <ul class="nav-menu">
+                        <li><a href="#">FEATURES</a></li>
+                        <li><a href="#">ASSETS</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">DOWNLOAD</a></li>
+                    </ul>
+                </div>
             </div>
         </header>
         <section class="about-sedna">
             <div class="container">
-                <div class="about-content center-align">
-                    <h1 class="about-content__heading m-0 fw-4">Design, collaborate, win.</h1>
-                    <p class="about-content__caption fw-3">Introducing “Sedna”. A responsive one page website,
+                <div class="about-content ta-center">
+                    <h1 class="about-content__heading head-1 m-0 fw-4">Design, collaborate, win.</h1>
+                    <p class="about-content__caption fw-3 head-3">Introducing “Sedna”. A responsive one page website,
                         designed &
                         developed by Peter Finlan,
                         exclusively for Codrops.</p>
@@ -50,8 +58,8 @@
             <div class="container">
                 <ul class="sedna-features-list">
                     <li>
-                        <figure class="m-0 center-align feature-figure"><img src="./images/pencil.svg"
-                                class="feature-icon" alt="pencil"></figure>
+                        <figure class="m-0 ta-center feature-figure"><img src="./images/pencil.svg" class="feature-icon"
+                                alt="pencil"></figure>
                         <div class="feature-content">
                             <h4 class="head-4 m-0">EASILY CUSTOMIZED</h4>
                             <p class="feature-caption caption">Easily customise Sedna to suit your start up, portfolio
@@ -60,8 +68,8 @@
                         </div>
                     </li>
                     <li>
-                        <figure class="m-0 center-align feature-figure"><img src="./images/bulb.svg"
-                                class="feature-icon" alt="bulb">
+                        <figure class="m-0 ta-center feature-figure"><img src="./images/bulb.svg" class="feature-icon"
+                                alt="bulb">
                         </figure>
                         <div class="feature-content">
                             <h4 class="head-4 m-0">MODERN DESIGN</h4>
@@ -71,7 +79,7 @@
                         </div>
                     </li>
                     <li>
-                        <figure class="m-0 center-align feature-figure"><img src="./images/responsive.svg"
+                        <figure class="m-0 ta-center feature-figure"><img src="./images/responsive.svg"
                                 class="feature-icon" alt="responsive"></figure>
                         <div class="feature-content">
                             <h4 class="head-4 m-0">RESPONSIVE DEVELOPMENT</h4>
@@ -90,14 +98,14 @@
             </figure>
             <div class="advantages-list container">
                 <article class="advantages-list__article">
-                    <h2 class="m-0 advantages-list__head fw-3">Sedna will drive your product forward</h2>
+                    <h2 class="m-0 advantages-list__head head-3">Sedna will drive your product forward</h2>
                     <p class="caption advantages-list__caption">Present your product, start up, or portfolio in a
                         beautifully modern way. Turn your visitors in to clients.
                     </p>
-                    <div class="advantages-list__features">
-                        <div class="feat">
-                            <figure class="m-0 center-align feat-figure"><img src="./images/circle-arrows.svg"
-                                    alt="responsive">
+                    <ul class="advantages-list__features">
+                        <li class="feat">
+                            <figure class="m-0 ta-center feat-figure"><img src="./images/circle-arrows.svg"
+                                    alt="circle-arrow" class="advantages-icons">
                             </figure>
                             <div class="feat-content">
                                 <h4 class="head-4 m-0 feat-content__head">UNIVERSAL & RESPONSIVE</h4>
@@ -105,9 +113,10 @@
                                     on any device.
                                 </p>
                             </div>
-                        </div>
-                        <div class="feat">
-                            <figure class="m-0 center-align feat-figure"><img src="./images/user.svg" alt="responsive">
+                        </li>
+                        <li class="feat">
+                            <figure class="m-0 ta-center feat-figure"><img src="./images/user.svg" alt="user"
+                                    class="advantages-icons">
                             </figure>
                             <div class="feat-content">
                                 <h4 class="head-4 m-0 feat-content__head">USER CENTRIC DESIGN</h4>
@@ -115,9 +124,10 @@
                                     and user centric
                                     behaviours. </p>
                             </div>
-                        </div>
-                        <div class="feat">
-                            <figure class="m-0 center-align feat-figure"><img src="./images/flask.svg" alt="responsive">
+                        </li>
+                        <li class="feat">
+                            <figure class="m-0 ta-center feat-figure"><img src="./images/flask.svg" alt="flask"
+                                    class="advantages-icons">
                             </figure>
                             <div class="feat-content">
                                 <h4 class="head-4 m-0 feat-content__head">CLEAN, REUSABLE CODE</h4>
@@ -125,15 +135,15 @@
                                     project you like.
                                 </p>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </article>
             </div>
         </section>
         <section class="about-sketch">
             <div class="container">
                 <article class="about-sketch__content">
-                    <h2 class="m-0 fw-3">Designed using Sketch!</h2>
+                    <h3 class="m-0 about-sketch__head head-3">Designed using Sketch!</h3>
                     <p class="caption">Easily change/switch/swap every placeholder inside every image on Sedna with
                         the
                         included Sketch files. You’ll have this template customised to suit your business in no time!
@@ -143,17 +153,18 @@
                         a pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum augue
                         faucibus felis pharetra. Proin condimentum et leo quis fringilla.
                     </p>
-                    <a href="#" class="btn-outline sketch-btn fw-6">WHAT'S SKETCH?</a>
+                    <div class="about-sketch__btn">
+                        <a href="#" class="btn-outline sketch-btn fw-6">WHAT'S SKETCH?</a></div>
                 </article>
             </div>
             <figure class="m-0 about-sketch__figure">
                 <img class="device-image" src="./images/macbook-pro.png" alt="macbook-pro">
             </figure>
         </section>
-        <section class="download-section center-align">
+        <section class="download-section ta-center">
             <div class="container download-content">
-                <h1 class="head-1 m-0 fw-3 text-white">Customise Sedna with the included <p class="sketch fw-2">
-                        Sketch<sup class="superscript-text">3</sup></p> file</h1>
+                <h2 class="head-2 m-0 fw-3 download-content__head">Customise Sedna with the included <p class="sketch">
+                        Sketch<sup class="superscript-text">3</sup></p> file</h2>
                 <p class="download-content__caption fw-3">Change/swap/edit every aspect of Sedna before you hit
                     development with the included Sketch file.</p>
                 <a href="#" class="btn-outline download-btn">DOWNLOAD NOW</a>
@@ -164,7 +175,7 @@
         </section>
         <section class="product-section">
             <div class="container product-content">
-                <h2 class="m-0">Showcase your smashing product with Sedna</h2>
+                <h3 class="m-0 product-content__head head-3">Showcase your smashing product with Sedna</h3>
                 <div class="product-features">
                     <ul class="m-0 product-features__list">
                         <li>
@@ -191,7 +202,7 @@
                     </ul>
                 </div>
             </div>
-            <figure class="m-0 center-align product-section__figure">
+            <figure class="m-0 ta-center product-section__figure">
                 <img src="./images/ocean.png" class="product-picture">
                 <figcaption>
                     <h6 class="head-6 m-0">PRODUCT</h6>
@@ -200,7 +211,7 @@
                     </a>
                 </figcaption>
             </figure>
-            <figure class="m-0 center-align product-section__figure">
+            <figure class="m-0 ta-center product-section__figure">
                 <img src="./images/plant.png" class="product-picture">
                 <figcaption>
                     <h6 class="head-6 m-0">TECHNOLOGY</h6>
@@ -209,7 +220,7 @@
                     </a>
                 </figcaption>
             </figure>
-            <figure class="m-0 center-align product-section__figure">
+            <figure class="m-0 ta-center product-section__figure">
                 <img src="./images/sky.png" class="product-picture">
                 <figcaption>
                     <h6 class="head-6 m-0">PRODUCT</h6>
@@ -218,24 +229,35 @@
                     </a>
                 </figcaption>
             </figure>
-            <div class="product-btn center-align">
+            <div class="product-btn ta-center">
                 <a href="#" class="btn-outline more-news fw-6">MORE NEWS</a>
             </div>
         </section>
         <section class="slider-section">
-            <div class="sedna-carousel--1 center-align">
+            <div class="sedna-carousel--1 ta-center">
                 <figure class="m-0">
                     <img src="./images/profile-image.jpg" class="user-image">
                 </figure>
-                <h1 class="m-0 fw-3 text-white head-1 sedna-carousel--1__head">“Sedna is crucial to our workflow”</h1>
+                <h2 class="m-0 fw-3 head-2 sedna-carousel--1__head">“Sedna is crucial to our workflow”</h2>
                 <p class="m-0 fw-3 head-4 sedna-carousel--1__caption">PETER FINLAN, CEO OF AWESOMESAUCE TECHNOLOGIES</p>
             </div>
-            <div class="slider-arrows text-white">
+            <div class="slider-arrows">
                 <a href="#" class="prev-btn"><i class="flaticon-right-arrow-angle arrow-icon"></i></a>
                 <a href="#" class="next-btn"><i class="flaticon-right-arrow-angle arrow-icon"></i></a>
             </div>
         </section>
     </div>
+
+    <script>
+        function openMenu() {
+            var x = document.getElementById("mobile-menu");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>
